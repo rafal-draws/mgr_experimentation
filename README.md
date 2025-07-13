@@ -82,6 +82,12 @@ Jupyter notebooks in this repository are typically used for:
 
 ## How to Run
 
+Every file in executables directory uses argparse, so you may use -h option for more details 
+```
+py3 <executabe> -h 
+```
+
+
 1. **Prepare Metadata**  
    ```
    python executables/0_generalisation_pipeline.py --metadata_path <metadata_folder>
@@ -89,7 +95,7 @@ Jupyter notebooks in this repository are typically used for:
 
 2. **Extract Signals**  
    ```
-   python executables/1_transformation_pipeline.py -m <metadata_path> -o <output_path> -d <data_path> [options...]
+   python executables/1_transformation_pipeline.py -m <metadata_path> -o <output_path> -d <data_path> 
    ```
 
 3. **Extract Features**  
@@ -111,9 +117,9 @@ Jupyter notebooks in this repository are typically used for:
 
 ## Dependencies
 
-- Python 3.8+
+- Python 3.10+
 - numpy, pandas, librosa, torch, scikit-learn, soundfile, fastparquet, etc.
-- See `requirements.txt` for a full list.
+- See `requirements` for a full list.
 
 ---
 
